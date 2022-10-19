@@ -23,7 +23,7 @@ import java.time.ZoneId
 import java.util.UUID
 
 
-class BookSeatsServiceForAMovieSessionServiceShould {
+class BookSeatsForAMovieSessionServiceShould {
 
     private val movieSessionRepository = mockk<MovieSessionRepository>(relaxed = true)
 
@@ -31,7 +31,7 @@ class BookSeatsServiceForAMovieSessionServiceShould {
 
     private val clock = Clock.fixed(Instant.parse("2007-12-03T10:15:30.00Z"), ZoneId.of("UTC"))
 
-    private val bookSeatsServiceForAMovieSession = BookSeatsServiceForAMovieSessionService(
+    private val bookSeatsServiceForAMovieSession = BookSeatsForAMovieSessionService(
         movieSessionRepository, domainEventPublisher, clock
     )
 

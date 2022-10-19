@@ -15,7 +15,7 @@ import java.time.Clock
 import java.time.LocalDate.now
 import java.util.UUID
 
-class BookSeatsServiceForAMovieSessionService(
+class BookSeatsForAMovieSessionService(
     private val movieSessionRepository: MovieSessionRepository,
     private val publisher: DomainEventPublisher,
     private val clock: Clock
